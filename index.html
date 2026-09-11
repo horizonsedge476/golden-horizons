@@ -420,22 +420,26 @@
     <div id="apply" class="reveal" style="max-width:640px;margin:56px auto 0;background:var(--white);border:1px solid var(--border);border-radius:6px;padding:36px;">
       <h3 style="font-size:1.2rem;margin-bottom:6px;">Apply for Home Support Worker / Caregiver</h3>
       <p style="color:var(--grey);font-size:.92rem;margin-bottom:22px;">This is a job application, separate from our client consultation request. We'll follow up by email once we've had a chance to review it.</p>
-      <form>
+      <form action="https://formsubmit.co/goldenhorizons.services@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New job application — Golden Horizons website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
-          <div><label for="app-name">Full name</label><input type="text" id="app-name" placeholder="Your name" required></div>
-          <div><label for="app-email">Email address</label><input type="email" id="app-email" placeholder="you@example.com" required></div>
+          <div><label for="app-name">Full name</label><input type="text" id="app-name" name="name" placeholder="Your name" required></div>
+          <div><label for="app-email">Email address</label><input type="email" id="app-email" name="email" placeholder="you@example.com" required></div>
         </div>
         <div class="form-row">
-          <div><label for="app-phone">Phone number</label><input type="tel" id="app-phone" placeholder="(306) 000-0000"></div>
+          <div><label for="app-phone">Phone number</label><input type="tel" id="app-phone" name="phone" placeholder="(306) 000-0000"></div>
           <div><label for="app-availability">Availability</label>
-            <select id="app-availability"><option>Flexible / any time</option><option>Weekdays</option><option>Evenings</option><option>Weekends</option></select>
+            <select id="app-availability" name="availability"><option>Flexible / any time</option><option>Weekdays</option><option>Evenings</option><option>Weekends</option></select>
           </div>
         </div>
-        <div><label for="app-experience">Relevant experience or certifications</label><input type="text" id="app-experience" placeholder="e.g. First Aid/CPR, home care experience, HCA certificate"></div>
-        <div><label for="app-message">Tell us a bit about yourself</label><textarea id="app-message" placeholder="Why you're a good fit, and anything else we should know"></textarea></div>
+        <div><label for="app-experience">Relevant experience or certifications</label><input type="text" id="app-experience" name="experience" placeholder="e.g. First Aid/CPR, home care experience, HCA certificate"></div>
+        <div><label for="app-message">Tell us a bit about yourself</label><textarea id="app-message" name="message" placeholder="Why you're a good fit, and anything else we should know"></textarea></div>
         <div>
           <button type="submit" class="btn btn-primary" style="width:100%;">Submit Application</button>
-          <p class="form-note">This form is a template: connect it to your email or a form service before launch.</p>
+          <p class="form-note">Your application goes straight to our inbox — we typically reply within one business day.</p>
         </div>
       </form>
     </div>
@@ -456,21 +460,25 @@
       <span class="eyebrow">Get in Touch</span>
       <h3 style="margin-bottom:18px;">Contact Golden Horizons Care Services</h3>
       <div class="contact-item"><b>Service area</b><span>Saskatoon, Martensville, Warman &amp; Dalmeny, Saskatchewan</span></div>
-      <div class="contact-item"><b>Email</b><span>info.horizonsedge@gmail.com</span></div>
+      <div class="contact-item"><b>Email</b><span>goldenhorizons.services@gmail.com</span></div>
       <div class="contact-item"><b>Part of</b><span>Horizons Edge Ventures Inc.</span></div>
     </div>
-    <form class="reveal">
+    <form class="reveal" action="https://formsubmit.co/goldenhorizons.services@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New consultation request — Golden Horizons website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="form-row">
-        <div><label for="name">Full name</label><input type="text" id="name" placeholder="Your name" required></div>
-        <div><label for="email">Email address</label><input type="email" id="email" placeholder="you@example.com" required></div>
+        <div><label for="name">Full name</label><input type="text" id="name" name="name" placeholder="Your name" required></div>
+        <div><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" required></div>
       </div>
       <div><label for="relation">Who needs care?</label>
-        <select id="relation"><option>Myself</option><option>A parent or grandparent</option><option>A spouse or partner</option><option>Another family member</option></select>
+        <select id="relation" name="relation"><option>Myself</option><option>A parent or grandparent</option><option>A spouse or partner</option><option>Another family member</option></select>
       </div>
-      <div><label for="message">Tell us a little about your situation</label><textarea id="message" placeholder="What kind of support are you looking for?"></textarea></div>
+      <div><label for="message">Tell us a little about your situation</label><textarea id="message" name="message" placeholder="What kind of support are you looking for?"></textarea></div>
       <div>
         <button type="submit" class="btn btn-primary" style="width:100%;">Request a Consultation</button>
-        <p class="form-note">This form is a template: connect it to your email or a form service before launch.</p>
+        <p class="form-note">Your message goes straight to our inbox — we typically reply within one business day.</p>
       </div>
     </form>
   </div>
